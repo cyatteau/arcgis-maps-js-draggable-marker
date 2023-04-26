@@ -1,0 +1,26 @@
+{
+  "name": "arcgis-maps-js-draggable-marker",
+  "version": "1.0.1",
+  "description": "Draggable marker for an ArcGIS Maps SDK for JS Map.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d dist"
+  },
+  "keywords": [
+    "map",
+    "arcgis",
+    "marker",
+    "javascript"
+  ],
+  "author": "Courtney Yatteau",
+  "license": "ISC",
+  "dependencies": {
+    "@arcgis/core": "^4.26.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4"
+  }
+}
