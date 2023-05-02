@@ -39,9 +39,8 @@ function draggableMarker(_long, lat, view) {
       return a.remove();
     });
     handlers.length = 0;
-    // console.log("Longitude: " + pointGraphic.geometry.longitude);
-    // console.log("Latitude: " + pointGraphic.geometry.latitude);
-    return pointGraphic.geometry.longitude;
+    console.log("Longitude: " + pointGraphic.geometry.longitude);
+    console.log("Latitude: " + pointGraphic.geometry.latitude);
   };
   var handlers = [];
   view.on("hold", function (_ref) {
