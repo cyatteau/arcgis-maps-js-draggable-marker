@@ -1,6 +1,6 @@
 {
   "name": "arcgis-maps-js-draggable-marker",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Draggable marker for an ArcGIS Maps SDK for JS Map.",
   "main": "index.js",
   "scripts": {

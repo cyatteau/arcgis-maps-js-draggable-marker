@@ -39,8 +39,9 @@ function draggableMarker(_long, lat, view) {
       return a.remove();
     });
     handlers.length = 0;
-    console.log("Longitude: " + pointGraphic.geometry.longitude);
-    console.log("Latitude: " + pointGraphic.geometry.latitude);
+    // console.log("Longitude: " + pointGraphic.geometry.longitude);
+    // console.log("Latitude: " + pointGraphic.geometry.latitude);
+    return pointGraphic.geometry.longitude;
   };
   var handlers = [];
   view.on("hold", function (_ref) {
@@ -56,11 +57,4 @@ function draggableMarker(_long, lat, view) {
       handlers.push(up);
     });
   });
-  var longitude = pointGraphic.geometry.longitude;
-  var latitude = pointGraphic.geometry.latitude;
-  var coordinates = {
-    longitude: longitude,
-    latitude: latitude
-  };
-  return coordinates;
 }
