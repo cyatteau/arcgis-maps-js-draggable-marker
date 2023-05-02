@@ -35,8 +35,9 @@ export function draggableMarker(long, lat, view) {
     updateGraphic(event, markerSymbol);
     handlers.forEach((a) => a.remove());
     handlers.length = 0;
-    console.log("Longitude: " + pointGraphic.geometry.longitude);
-    console.log("Latitude: " + pointGraphic.geometry.latitude);
+    // console.log("Longitude: " + pointGraphic.geometry.longitude);
+    // console.log("Latitude: " + pointGraphic.geometry.latitude);
+    return pointGraphic.geometry.longitude;
   };
 
   const handlers = [];
@@ -53,8 +54,4 @@ export function draggableMarker(long, lat, view) {
       handlers.push(up);
     });
   });
-  let longitude = pointGraphic.geometry.longitude;
-  let latitude = pointGraphic.geometry.latitude;
-  let coordinates = { longitude: longitude, latitude: latitude };
-  return coordinates;
 }
